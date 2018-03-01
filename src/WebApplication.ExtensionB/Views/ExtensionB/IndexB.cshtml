@@ -1,0 +1,13 @@
+﻿@* Copyright © 2015 Dmitry Sikorsky. All rights reserved. *@
+@* Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. *@
+@model WebApplication.ExtensionB.ViewModels.ExtenstionB.IndexBViewModel
+@{
+  this.ViewBag.Title = "Items B FROM Database 1";
+}
+<h1>@ViewBag.Title</h1>
+<div class="items">
+  @foreach (var item in this.Model.Items)
+  {
+    @Html.Partial("_ItemBB", item)
+  }
+</div>

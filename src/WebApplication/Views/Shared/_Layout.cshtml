@@ -1,0 +1,25 @@
+﻿@* Copyright © 2015 Dmitry Sikorsky. All rights reserved. *@
+@* Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. *@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>@Html.Raw(this.ViewBag.Title as string)</title>
+</head>
+<body>
+
+<nav>
+  <ul class="nav nav-pills">
+    <li><a href="/extensiona/index" title="Extension A">Extension A - AItems Using first database</a></li>
+    <li><a href="/extensiona/indexb" title="Extension A">Extension A - BItems Using first database</a></li>
+    <li><a href="/extensionb/index" title="Extension B">Extension B - AItems Using second database</a></li>
+    <li><a href="/extensionb/indexb" title="Extension B">Extension B - BItems Using second database</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  @RenderBody()
+</div>
+</body>
+</html>

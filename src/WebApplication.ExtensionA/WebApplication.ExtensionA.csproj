@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\ExtensionA\IndexB.cshtml" />
+    <None Remove="Views\Shared\_ItemAB.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExtCore\ExtCore.Mvc.Infrastructure\ExtCore.Mvc.Infrastructure.csproj" />
+    <ProjectReference Include="..\Data.Abstractions.Extensions\Data.Abstractions.Extensions.csproj" />
+    <ProjectReference Include="..\..\ExtCore\ExtCore.Data.EntityFramework.Sqlite\ExtCore.Data.EntityFramework.Sqlite.csproj" />
+    <ProjectReference Include="..\WebApplication.ExtensionA.Data.Abstractions\WebApplication.ExtensionA.Data.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExtCore\ExtCore.Data.Abstractions\ExtCore.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\Data.Abstractions.Extensions\Data.Abstractions.Extensions.csproj" />
+    <ProjectReference Include="..\WebApplication.ExtensionA.Data.Entities\WebApplication.ExtensionA.Data.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
